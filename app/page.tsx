@@ -4,6 +4,7 @@ import { LiveChatPreview } from "@/components/landing/live-chat-preview"
 import { DashboardPreview } from "@/components/landing/dashboard-preview"
 import { WorkflowSection } from "@/components/landing/workflow-section"
 import { TemplatesWorkflowSection } from "@/components/landing/templates-workflow-section"
+import { VisionMissionSection } from "@/components/landing/vision-mission-section"
 import { FeaturesSection } from "@/components/landing/features-section"
 import { StatsSection } from "@/components/landing/stats-section"
 import { CTASection } from "@/components/landing/cta-section"
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <VisionMissionSection />
         <StatsSection />
         <LiveChatPreview />
         <DashboardPreview />
