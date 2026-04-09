@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 const chatMessages = [
   { type: "user", message: "Hola, necesito consultar el estado de mi RUC" },
-  { type: "bot", message: "Bienvenido a AxiomFlow. Por favor, ingrese su numero de cedula para validar su identidad." },
+  { type: "bot", message: "Bienvenido a Omarcellec. Por favor, ingrese su numero de cedula para validar su identidad." },
   { type: "user", message: "1712345678" },
   { type: "bot", message: "Validando sus datos con el Registro Civil... Identidad verificada: Juan Perez Martinez. Ahora consultare su estado de RUC..." },
   { type: "bot", message: "Su RUC 1712345678001 esta ACTIVO. Estado tributario: Al dia. Detecto que tiene una consulta compleja. Voy a transferirlo con un asesor humano." },
@@ -72,7 +72,7 @@ export function LiveChatPreview() {
                   <Sparkles className="h-5 w-5 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-foreground">AxiomFlow AI</p>
+                  <p className="text-sm font-medium text-foreground">Omarcellec</p>
                   <p className="text-xs text-muted-foreground">Asistente Inteligente</p>
                 </div>
               </div>

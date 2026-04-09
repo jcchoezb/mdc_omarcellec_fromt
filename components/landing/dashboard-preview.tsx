@@ -194,7 +194,7 @@ export function DashboardPreview() {
                       <div className="max-w-[85%] rounded-2xl bg-accent/20 px-3 py-2">
                         <div className="mb-1 flex items-center gap-1 text-xs text-accent">
                           <Bot className="h-3 w-3" />
-                          AxiomFlow AI
+                          Omarcellec AI
                         </div>
                         <p className="text-sm text-foreground">Cedula validada. RUC: 1723456789001 - Estado: ACTIVO</p>
                         <p className="mt-1 text-xs text-muted-foreground">10:23 AM</p>

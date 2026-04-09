@@ -34,10 +34,10 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-                <span className="text-sm font-bold text-accent-foreground">A</span>
+                <span className="text-sm font-bold text-accent-foreground">O</span>
               </div>
               <span className="text-lg font-semibold tracking-tight text-foreground">
-                AxiomFlow AI
+                Omarcellec
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -105,7 +105,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            2026 AxiomFlow AI. Todos los derechos reservados.
+            2026 Omarcellec. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
             {footerLinks.legal.map((link) => (

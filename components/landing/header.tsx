@@ -14,10 +14,10 @@ export function Header() {
         <div className="flex items-center gap-x-12">
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-              <span className="text-sm font-bold text-accent-foreground">A</span>
+              <span className="text-sm font-bold text-accent-foreground">O</span>
             </div>
             <span className="text-lg font-semibold tracking-tight text-foreground">
-              AxiomFlow AI
+              Omarcellec
             </span>
           </Link>
           <div className="hidden lg:flex lg:gap-x-8">

@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'AxiomFlow AI - Automatizacion con Sentido Humano',
+  title: 'Omarcellec - Automatizacion con Sentido Humano',
   description: 'Plataforma SaaS de automatizacion de WhatsApp con atencion hibrida IA + Humano, validacion de datos oficiales y panel administrativo en tiempo real.',
   generator: 'v0.app',
   icons: {
