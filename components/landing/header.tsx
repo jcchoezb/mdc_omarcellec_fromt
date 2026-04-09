@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
@@ -36,6 +37,7 @@ export function Header() {
           </div>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-x-4">
+          <ThemeToggle />
           <Button variant="ghost" size="sm" className="text-foreground hover:text-primary">
             Iniciar Sesion
           </Button>
@@ -43,17 +45,19 @@ export function Header() {
             Solicitar Demo
           </Button>
         </div>
-        <button
-          type="button"
-          className="lg:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
           {mobileMenuOpen ? (
             <X className="h-6 w-6 text-foreground" />
           ) : (
             <Menu className="h-6 w-6 text-foreground" />
           )}
-        </button>
+          </button>
+        </div>
       </nav>
       {mobileMenuOpen && (
         <div className="lg:hidden">
