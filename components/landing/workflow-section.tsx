@@ -19,7 +19,7 @@ const workflowSteps = [
   {
     icon: Database,
     title: "Validacion APIs",
-    description: "Integracion con WebServices Ecuador y Easyhermes",
+    description: "Integracion con WebServices Ecuador y APIs de su empresa",
     color: "bg-blue-500",
   },
   {
@@ -136,17 +136,17 @@ export function WorkflowSection() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-6">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/20">
-              <Bot className="h-6 w-6 text-accent" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20">
+              <Bot className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-foreground">Easyhermes</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Omarcellec Platform</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Plataforma de mensajeria multicanal para gestion unificada de comunicaciones.
+              Nuestra plataforma de automatizacion inteligente para gestion unificada de comunicaciones.
             </p>
             <ul className="mt-4 space-y-2">
-              {["SMS masivos", "Notificaciones push", "Email transaccional"].map((item, idx) => (
+              {["Chatbot con IA", "Flujos personalizados", "Panel administrativo"].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
-                  <Check className="h-4 w-4 text-accent" />
+                  <Check className="h-4 w-4 text-primary" />
                   {item}
                 </li>
               ))}
