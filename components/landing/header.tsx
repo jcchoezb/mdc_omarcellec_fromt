@@ -13,10 +13,10 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center gap-x-12">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-              <span className="text-sm font-bold text-accent-foreground">O</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary via-secondary to-accent shadow-lg">
+              <span className="text-sm font-bold text-white">O</span>
             </div>
-            <span className="text-lg font-semibold tracking-tight text-foreground">
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Omarcellec
             </span>
           </Link>
@@ -36,10 +36,10 @@ export function Header() {
           </div>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-x-4">
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" className="text-foreground hover:text-primary">
             Iniciar Sesion
           </Button>
-          <Button size="sm">
+          <Button size="sm" className="bg-gradient-to-r from-primary to-secondary text-white shadow-md shadow-primary/20 hover:shadow-lg">
             Solicitar Demo
           </Button>
         </div>

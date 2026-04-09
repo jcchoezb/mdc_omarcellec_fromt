@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const stats = [
-  { value: "98%", label: "de consultas resueltas por IA", company: "Empresas PYME" },
-  { value: "3x", label: "mas rapido en validacion de datos", company: "Sector Financiero" },
-  { value: "45%", label: "reduccion en costos de atencion", company: "Retail" },
-  { value: "24/7", label: "disponibilidad sin interrupciones", company: "Telecomunicaciones" },
+  { value: "98%", label: "de consultas resueltas por IA", company: "Empresas PYME", color: "from-primary to-primary/70" },
+  { value: "3x", label: "mas rapido en validacion de datos", company: "Sector Financiero", color: "from-secondary to-secondary/70" },
+  { value: "45%", label: "reduccion en costos de atencion", company: "Retail", color: "from-accent to-accent/70" },
+  { value: "24/7", label: "disponibilidad sin interrupciones", company: "Telecomunicaciones", color: "from-primary via-secondary to-accent" },
 ]
 
 export function StatsSection() {
@@ -28,9 +28,9 @@ export function StatsSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 * idx }}
             >
-              <p className="text-4xl font-bold text-foreground lg:text-5xl">{stat.value}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
-              <p className="mt-1 text-xs text-accent">{stat.company}</p>
+              <p className={`text-4xl font-bold lg:text-5xl bg-gradient-to-br ${stat.color} bg-clip-text text-transparent`}>{stat.value}</p>
+              <p className="mt-2 text-sm text-foreground font-medium">{stat.label}</p>
+              <p className="mt-1 text-xs text-muted-foreground">{stat.company}</p>
             </motion.div>
           ))}
         </motion.div>
