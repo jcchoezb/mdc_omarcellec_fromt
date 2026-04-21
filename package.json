@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "next build && npx @opennextjs/cloudflare",
+    "build:cf": "npx @opennextjs/cloudflare build",
     "start": "next start",
     "lint": "eslint .",
-    "build:worker": "npx @opennextjs/cloudflare",
+    "build:worker": "npx @opennextjs/cloudflare build",
     "dev:worker": "wrangler dev",
     "preview": "pnpm build:worker && pnpm dev:worker",
     "deploy": "wrangler deploy"
