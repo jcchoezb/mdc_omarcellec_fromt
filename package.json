@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && opennextjs-cloudflare build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "build:worker": "opennextjs-cloudflare build",
     "dev:worker": "wrangler dev",
     "preview": "pnpm build:worker && pnpm dev:worker",
-    "deploy": "wrangler deploy"
+    "deploy": "pnpm build:worker && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
