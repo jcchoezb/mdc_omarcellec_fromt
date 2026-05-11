@@ -36,7 +36,7 @@ export function Header() {
             </Link>
           </div>
         </div>
-        <div className="hidden lg:flex lg:items-center lg:gap-x-4">
+       {/*} <div className="hidden lg:flex lg:items-center lg:gap-x-4">
           <ThemeToggle />
           <Button variant="ghost" size="sm" className="text-foreground hover:text-primary">
             Iniciar Sesion
@@ -44,7 +44,7 @@ export function Header() {
           <Button size="sm" className="bg-gradient-to-r from-primary to-secondary text-white shadow-md shadow-primary/20 hover:shadow-lg">
             Solicitar Demo
           </Button>
-        </div>
+        </div>*/}
         <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button

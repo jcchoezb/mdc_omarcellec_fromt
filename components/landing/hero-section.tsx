@@ -46,7 +46,7 @@ export function HeroSection() {
           Validacion de datos oficiales, escalamiento automatico a asesores humanos 
           y panel de control en tiempo real.
         </motion.p>
-        <motion.div
+        {/*<motion.div
           className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export function HeroSection() {
             <Play className="h-4 w-4 text-primary" />
             Ver Demo
           </Button>
-        </motion.div>
+        </motion.div>*/}
         <motion.div
           className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground"
           initial={{ opacity: 0 }}
