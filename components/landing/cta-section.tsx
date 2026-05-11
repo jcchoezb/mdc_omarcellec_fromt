@@ -26,7 +26,7 @@ export function CTASection() {
             Unete a las empresas que ya estan automatizando su atencion con IA 
             sin perder el toque humano. Comienza tu prueba gratuita de 14 dias.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          {/*<div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="gap-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all">
               Comenzar Prueba Gratis
               <ArrowRight className="h-4 w-4" />
@@ -34,7 +34,7 @@ export function CTASection() {
             <Button size="lg" variant="outline" className="border-secondary/40 hover:bg-secondary/10 hover:border-secondary/60">
               Agendar Demo Personalizada
             </Button>
-          </div>
+          </div>*/}
           <p className="mt-6 text-sm text-muted-foreground">
             Sin tarjeta de credito requerida. Cancela cuando quieras.
           </p>
