@@ -1,43 +1,51 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight, Play, CheckCircle2, Sparkles, Shield, Headphones } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-6 pt-32 pb-20 lg:px-8 lg:pt-40 lg:pb-32">
+    <section className="relative overflow-hidden px-6 pt-24 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
+      {/* Background subtle */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px]" />
-        <div className="absolute top-1/3 right-1/4 h-[400px] w-[400px] rounded-full bg-secondary/20 blur-[100px]" />
-        <div className="absolute bottom-0 left-1/2 h-[350px] w-[350px] rounded-full bg-accent/20 blur-[100px]" />
+        <div className="absolute top-0 left-1/4 h-[400px] w-[400px] rounded-full bg-primary/5 blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 h-[300px] w-[300px] rounded-full bg-accent/5 blur-[80px]" />
       </div>
-      <div className="mx-auto max-w-4xl text-center">
+
+      <div className="mx-auto max-w-6xl">
+        {/* Badge */}
         <motion.div
+          className="flex justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-secondary"></span>
-            </span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary">
+            <Sparkles className="h-4 w-4" />
             Nuevo: Handoff Inteligente IA a Humano
           </span>
         </motion.div>
-        <motion.h1
-          className="mt-8 text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+
+        {/* Main Title */}
+        <motion.div
+          className="mt-8 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="text-balance">Automatizacion con</span>
-          <br />
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Sentido Humano</span>
-        </motion.h1>
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <span className="text-balance">Automatizacion con</span>
+            <br />
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Sentido Humano
+            </span>
+          </h1>
+        </motion.div>
+
+        {/* Description */}
         <motion.p
-          className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+          className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground lg:text-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -46,44 +54,48 @@ export function HeroSection() {
           Validacion de datos oficiales, escalamiento automatico a asesores humanos 
           y panel de control en tiempo real.
         </motion.p>
-        {/*<motion.div
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+
+        {/* Feature Cards */}
+        <motion.div
+          className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Button size="lg" className="gap-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
-            Comenzar Ahora
-            <ArrowRight className="h-4 w-4" />
-          </Button>
-          <Button size="lg" variant="outline" className="gap-2 border-primary/30 hover:bg-primary/10 hover:border-primary/50">
-            <Play className="h-4 w-4 text-primary" />
-            Ver Demo
-          </Button>
-        </motion.div>*/}
-        <motion.div
-          className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <div className="flex items-center gap-2">
-            <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Sin tarjeta de credito
+          <div className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Shield className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Sin tarjeta de credito</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Comienza sin compromisos ni pagos iniciales</p>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="h-5 w-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            14 dias de prueba gratis
+
+          <div className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                <CheckCircle2 className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">14 dias de prueba gratis</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Acceso completo a todas las funciones</p>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="h-5 w-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Soporte 24/7
+
+          <div className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:border-secondary/30 hover:shadow-lg hover:shadow-secondary/5">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary dark:bg-muted dark:text-foreground">
+                <Headphones className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Soporte 24/7</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Equipo dedicado siempre disponible</p>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
