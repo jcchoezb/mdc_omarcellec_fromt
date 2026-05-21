@@ -34,7 +34,7 @@ export function HeroSection() {
         >
           <span className="text-balance">Automatizacion con</span>
           <br />
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Sentido Humano</span>
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Sentido Humano</span>
         </motion.h1>
         <motion.p
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"

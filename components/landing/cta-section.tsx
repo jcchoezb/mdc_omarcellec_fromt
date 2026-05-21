@@ -20,7 +20,7 @@ export function CTASection() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 rounded-full bg-accent/15 blur-[80px]" />
           </div>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            <span className="text-balance bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Transforma tu Atencion al Cliente Hoy</span>
+            <span className="text-balance bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Transforma tu Atencion al Cliente Hoy</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Unete a las empresas que ya estan automatizando su atencion con IA 

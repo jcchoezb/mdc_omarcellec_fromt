@@ -14,10 +14,10 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center gap-x-12">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary via-secondary to-accent shadow-lg">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary shadow-lg">
               <span className="text-sm font-bold text-white">O</span>
             </div>
-            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-xl font-bold tracking-tight text-primary">
               Omarcellec
             </span>
           </Link>

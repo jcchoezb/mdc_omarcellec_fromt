@@ -9,6 +9,8 @@ import { FeaturesSection } from "@/components/landing/features-section"
 import { StatsSection } from "@/components/landing/stats-section"
 import { CTASection } from "@/components/landing/cta-section"
 import { Footer } from "@/components/landing/footer"
+import { SplitScreenSection } from "@/components/landing/split-screen-section"
+import { WhatsAppButton } from "@/components/landing/whatsapp-button"
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <SplitScreenSection />
         <VisionMissionSection />
         <StatsSection />
         <LiveChatPreview />
@@ -26,6 +29,7 @@ export default function Home() {
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }
