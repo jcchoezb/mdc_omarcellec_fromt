@@ -1,5 +1,6 @@
 import { Header } from "@/components/landing/header"
 import { HeroSection } from "@/components/landing/hero-section"
+import { ImageCarousel } from "@/components/landing/image-carousel"
 import { LiveChatPreview } from "@/components/landing/live-chat-preview"
 import { DashboardPreview } from "@/components/landing/dashboard-preview"
 import { WorkflowSection } from "@/components/landing/workflow-section"
@@ -17,6 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-background font-sans">
       <Header />
       <main>
+        <ImageCarousel />
         <HeroSection />
         <SplitScreenSection />
         <VisionMissionSection />
